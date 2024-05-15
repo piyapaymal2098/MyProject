@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.comcast.crm.basetest.baseclass;
 @Listeners(com.comcast.crm.listenerUtility.ListenerImpclass.class)
-public class INvoicTest extends baseclass {
+public class INvoic extends baseclass {
 	
 	
 	@Test

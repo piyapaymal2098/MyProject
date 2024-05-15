@@ -29,7 +29,7 @@ import com.comcast.crm.objectRepositoryuti.LoginPage;
 import com.comcast.crm.objectRepositoryuti.OrganizationInformationPagr;
 import com.comcast.crm.objectRepositoryuti.OrganizationPage;
 
-public class CreatOrganztionWithIndustryWithPOMTest {
+public class CreatOrganztionWithIndustryWithPOM {
 
 	public static void main(String[] args) throws Throwable {
 		//read comman data from properties

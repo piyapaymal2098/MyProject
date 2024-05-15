@@ -28,7 +28,7 @@ import com.comcast.crm.objectRepositoryuti.CreatNewContactPage;
 import com.comcast.crm.objectRepositoryuti.HomePage;
 import com.comcast.crm.objectRepositoryuti.LoginPage;
 
-public class CreateContactTest2 extends baseclass {
+public class CreateContact extends baseclass {
 
 	public static void main(String[] args) throws Throwable {
 		

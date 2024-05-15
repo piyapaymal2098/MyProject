@@ -18,7 +18,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import com.comcast.crm.genric.webdriverutility.JavaUtility;
 
-public class CreateContactWithSupportDate {
+public class CreateContactWithSupportDateTest {
 
 	public static void main(String[] args) throws Throwable {
 		JavaUtility javau= new JavaUtility();

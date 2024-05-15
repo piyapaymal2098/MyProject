@@ -28,7 +28,7 @@ import com.comcast.crm.objectRepositoryuti.LoginPage;
 import com.comcast.crm.objectRepositoryuti.OrganizationInformationPagr;
 import com.comcast.crm.objectRepositoryuti.OrganizationPage;
 
-public class CreateContactWithOrgTest {
+public class CreateContactWithOrg {
 	
 	public static void main(String[] args) throws Throwable {
 		FileUtility flib= new FileUtility();

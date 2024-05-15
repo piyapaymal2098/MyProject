@@ -17,7 +17,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class CreatOrganztionTest1 {
+public class CreatOrganztion {
 
 	public static void main(String[] args) throws Throwable {
 		//read comman data from properties

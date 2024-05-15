@@ -28,7 +28,7 @@ import com.comcast.crm.objectRepositoryuti.LoginPage;
 import com.comcast.crm.objectRepositoryuti.OrganizationInformationPagr;
 import com.comcast.crm.objectRepositoryuti.OrganizationPage;
 
-public class DeleteOrgTest {
+public class DeleteOrg {
 
 	public static void main(String[] args) throws Throwable {
 		//read comman data from properties

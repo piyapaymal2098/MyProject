@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import com.comcast.crm.basetest.baseclass;
 import com.comcast.crm.objectRepositoryuti.LoginPage;
 
-public class SearchContactTest  extends baseclass{
+public class SearchContact  extends baseclass{
 	/**
 	 * Scenario login ()==> Navigate to contact===> Createcontact===>Verify
 	 */

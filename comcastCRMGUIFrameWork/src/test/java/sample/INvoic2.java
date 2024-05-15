@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.comcast.crm.basetest.baseclass;
 @Listeners(com.comcast.crm.listenerUtility.ListenerImpclass.class)
-public class INvoicTest2 extends baseclass {
+public class INvoic2 extends baseclass {
 	@Test(retryAnalyzer = com.comcast.crm.listenerUtility.retryimplimentation.class)
 	public void activatesim() {
 		System.out.println("excuet creatInvoicTest");

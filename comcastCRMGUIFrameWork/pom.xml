@@ -3,6 +3,64 @@
   <groupId>comcastCRMGUIFrameWork</groupId>
   <artifactId>comcastCRMGUIFrameWork</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <profiles>
+	<profile>
+		<id>FR</id>
+		<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile></suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	</profile>
+	<profile>
+		<id>ST</id>
+		<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>Smoke.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	</profile>
+	<profile>
+		<id>RRT</id>
+		<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile></suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	</profile>
+	
+  </profiles>
+  
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -56,29 +114,15 @@
     <artifactId>commons-io</artifactId>
     <version>2.16.1</version>
 </dependency>
-
-  	<dependency>
-  		<groupId>AdvanceSeleniumCRMGUIFramework</groupId>
-  		<artifactId>AdvanceSeleniumCRMGUIFramework</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  	
-  	
+ 	
   	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>
     <version>5.1.1</version>
 </dependency>
-
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
   </dependencies>
+  
+  
   
 </project>

@@ -49,8 +49,8 @@ public static WebDriver sdriver = null;
 		
 	
 		System.out.println("====launch the browser====");	
-	String BROWSER = flib.getDataFromPropertiesFile("browser");;
-	 
+	//String BROWSER = flib.getDataFromPropertiesFile("browser");;
+	 String BROWSER= System.getProperty("browser",flib.getDataFromPropertiesFile("browser"));
 	  
 	  if(BROWSER.equals("chrome")) {
 		 
@@ -71,9 +71,12 @@ public static WebDriver sdriver = null;
 	@BeforeMethod(groups = {"smokeTest","regressionTest"} )
 	public void configBM() throws Throwable {
 		System.out.println("====login to application====");
-		 String URL = flib.getDataFromPropertiesFile("url");
-		 String USERNAME = flib.getDataFromPropertiesFile("username");
-		 String  PASSWORD= flib.getDataFromPropertiesFile("password");
+		// String URL = flib.getDataFromPropertiesFile("url");
+		// String USERNAME = flib.getDataFromPropertiesFile("username");
+		// String  PASSWORD= flib.getDataFromPropertiesFile("password");
+		String URL= System.getProperty("url",flib.getDataFromPropertiesFile("url"));
+		String USERNAME= System.getProperty("username",flib.getDataFromPropertiesFile("username"));
+		String PASSWORD= System.getProperty("password",flib.getDataFromPropertiesFile("password"));
 		LoginPage lp= new LoginPage(driver);
 		lp.LoginToapp(URL, USERNAME, PASSWORD);
 	}
@@ -94,7 +97,7 @@ public static WebDriver sdriver = null;
 		public void confiAs() throws SQLException {
 			
 			System.out.println("====close db connection====");
-			dlib.closeDbconnection();
+			//dlib.closeDbconnection();
 			
 		
 	}

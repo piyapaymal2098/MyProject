@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import com.comcast.crm.genric.fileutility.ExcelUtility;
 
-public class GetProductInfoTest {
+public class GetProductInfo {
 @Test(dataProvider ="getData" )
 	public void GetProductInfoTest(String brandname,String productname ) throws Throwable {
 	
